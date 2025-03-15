@@ -19,7 +19,7 @@ function buttonValid()
         document.getElementById("nameError").innerHTML = "";
     }
     
-    if (name.trim() === "")
+    if (email.trim() === "")
     {
         document.getElementById("emailError").innerHTML = "You forgot your email!";
         document.getElementById("emailError").style.color = "red";
@@ -32,7 +32,7 @@ function buttonValid()
         document.getElementById("emailError").innerHTML = "";
     }
 
-    if (name.trim() === "")
+    if (message.trim() === "")
     {
         document.getElementById("messageError").innerHTML = "You forgot your message!";
         document.getElementById("messageError").style.color = "red";
