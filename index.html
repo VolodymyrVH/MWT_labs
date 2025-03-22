@@ -2,26 +2,24 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Lab1</title>
+    <title>Lab2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <div class="checkbox">
-        <div class="fields">
-            <form>
-                <label>First name:</label><br>
-                <input type="text" id="name"><br>
-                <p id="nameError"></p>
-                <label>Email:</label><br>
-                <input type="email" id="email"><br>
-                <p id="emailError"></p>
-                <label>Message:</label><br>
-                <textarea id="message"></textarea><br>
-                <p id="messageError"></p>
-            </form>
-        </div>
-        <div class="send__div">
-            <button class="send__button" onclick="buttonValid()">Send</button>
+    <div class="field-clock">
+        <div class="container">
+            <div class="clock">
+                <span id="hrs">00</span>
+                <span>:</span>
+                <span id="min">00</span>
+                <span>:</span>
+                <span id="sec">00</span>
+                <span id="period"></span>
+            </div>
+            <button id="changeFormat">Change Format</button>
         </div>
     </div>
     <script src="index.js"></script>
