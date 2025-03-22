@@ -1,50 +1,89 @@
+.righteous-regular {
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
 body{
-    background-color: #1abc9c;
-    justify-items: center;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 42%, rgba(252,176,69,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
 }
 
-label{
-    margin-bottom: 5px;
-}
-
-input, textarea{
+.field-clock{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 30%;
+    width: 60%;
     border-radius: 8px;
-    font-size: 18px;
-    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-textarea{
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 100px;
+    height: 100%;
+    flex-direction: column;
 }
 
-.checkbox{
-    display: block;
-    margin-top: 200px;
-    width: 20%;
-    justify-items: center;
-    background-color: rgb(243, 243, 243);
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 10px 10px 40px;
+.clock{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.fields{
-    display: block;
-    font-size: 20px;
-    font-weight: 600;
-}
-
-.send__button{
-    background-color: #1abc9c;
-    border: none;
-    border-radius: 8px;
+.clock span{
+    font-size: 100px;
     color: white;
-    height: 30px;
-    width: 80px;
-    font-size: 20px;
+    font-weight: 900;
+    position: relative;
+    font-family: "Righteous";
+    text-align: center;
+    width: 100px;
+    display: inline-block;
 }
 
-.send__button:hover{
-    background-color: #18a085;
+.clock span::after{
+    font-size: 16px;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#hrs::after{
+    content: 'HOURS';
+}
+
+#min::after{
+    content: 'MINUTS';
+}
+
+#sec::after{
+    content: 'SECONDS';
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background: rgb(41, 41, 41);
+    color: white;
+    font-weight: bold;
+}
+
+#period{
+    margin-left: 670px;
+    position: absolute;
 }
